@@ -1,0 +1,64 @@
+// banner part css button //
+.banner__text {
+  .btn {
+    height: 47px;
+    width: 188px;
+    color: #008bad;
+    border-radius: 5px;
+    letter-spacing: 0.05em;
+    border: 2px solid #008bad;
+    transition: all linear 0.2s;
+    font-family: "Montserrat", sans-serif;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #008bad;
+    }
+    @media (max-width: 767.98px) {
+      width: 170px;
+    }
+  }
+}
+// Learning HUb part css //
+#learning__hub {
+  .learning__hub-text {
+    .btn {
+      width: 180px;
+      height: 48px;
+      color: #008bad;
+      letter-spacing: 0.05em;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
+// who we are part css //
+#who__we-are {
+  .who__we-are-text {
+    .btn {
+      width: 180px;
+      height: 48px;
+      letter-spacing: 0.05em;
+      background-color: #a7606f;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
+// Subscribtion part css //
+#subscribtion {
+  .subscribe__content {
+    .subscribe__box {
+      .subscribe__btn {
+        .btn {
+          width: 270px;
+          height: 45px;
+          font-size: 18px;
+          background-color: #a7606f;
+          font-family: "Montserrat", sans-serif;
+          @media (max-width: 767.98px) {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

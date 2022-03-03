@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+    <!-- main style  -->
+    <link href="./scss/style.css" rel="stylesheet" />
+
+    <title>4E's CONSULTING</title>
+  </head>
+  <body>
+    <!--    navbar part hmtl start-->
+
+    <nav class="navbar navbar-expand-lg navbar-light position-fixed w-100 d-none d-lg-flex">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-1 blue-text" href="./index.html"> LOGO </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto rounded align-items-center">
+            <li class="nav-item mx-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Consulting</a></li>
+            <li class="nav-item mx-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Education</a></li>
+            <li class="nav-item mx-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Subscriptions</a></li>
+            <li class="nav-item mx-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Blog</a></li>
+            <li class="nav-item mx-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Shop</a></li>
+            <li class="nav-item mx-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">About us</a></li>
+            <li class="nav-item mx-2"><a class="nav-link fw-bold fs-6 p-2 mb-0 contact" href="#">Contact us</a></li>
+
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-semiBold fs-6" href="#"><img src="./images/user.svg" alt="user.svg" class="img-fluid" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semiBold fs-6 position-relative" href="#">
+                <img src="./images/add-cart.svg" alt="add-cart.svg" class="img-fluid" />
+                <span class="position-absolute rounded-circle text-center text-white fw-normal"> 2 </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-mobile navbar-expand-lg navbar-light position-fixed w-100 px-2 d-flex d-lg-none">
+      <a class="navbar-brand blue-text fw-bold fs-1" href="./index.html"> LOGO </a>
+      <a class="ms-auto me-4" href="#"><img src="./images/shop_cart.svg" alt="" /></a>
+      <!-- Button trigger modal -->
+      <button class="navbar-toggler py-2" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img src="./images/bar.svg" alt="bar.svg" /></button>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog m-0 modal-dialog-centered">
+          <div class="modal-content bg-white">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                <a class="navbar-logo" href="#">
+                  <img class="img-fluid" src="./images/logo.png" alt="logo.png" />
+                </a>
+              </h5>
+              <button type="button" class="btn close-btn" data-bs-dismiss="modal" aria-label="Close"><img src="./images/close.svg" alt="close.svg" /></button>
+            </div>
+            <div class="modal-body p-0 bg-white">
+              <ul class="navbar-nav ms-auto px-5">
+                <li class="nav-item px-2 py-2">
+                  <a class="me-2" href="#"><img src="./images/user-nav.svg" alt="user-nav" class="img-fluid" /></a>
+                  <a class="ms-2" href="#"><img src="./images/shop_cart2.svg" alt="user-nav" class="img-fluid" /></a>
+                </li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Consulting</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Education</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Subscriptions</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Blog</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">Shop</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-semiBold fs-6 mb-0" href="#">About us</a></li>
+                <li class="nav-item mx-2 py-2"><a class="nav-link fw-bold fs-6 p-2 mb-0 contact" href="#">Contact us</a></li>
+                <li class="mt-4 px-2 nav-item">
+                  <a class="me-1" href="#"><i class="fa fa-linkedin rounded-circle d-inline-flex align-items-center justify-content-center"></i></a>
+                  <a class="mx-1" href="#"><i class="fa fa-facebook rounded-circle d-inline-flex align-items-center justify-content-center"></i></a>
+                  <a class="ms-1" href="#">
+                    <i class="rounded-circle d-inline-flex align-items-center justify-content-center">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.12623 4.17706C4.02328 4.17706 2.30711 5.91541 2.30711 8.04555C2.30711 10.1757 4.02328 11.914 6.12623 11.914C8.22918 11.914 9.94535 10.1757 9.94535 8.04555C9.94535 5.91541 8.22918 4.17706 6.12623 4.17706ZM6.12623 13.9977C2.87439 13.9977 0.25 11.3394 0.25 8.04555C0.25 4.75167 2.87439 2.09335 6.12623 2.09335C9.37807 2.09335 12.0025 4.75167 12.0025 8.04555C12.0025 11.3394 9.37807 13.9977 6.12623 13.9977ZM12.2431 3.23968C11.4839 3.23968 10.8708 2.61863 10.8708 1.84958C10.8708 1.08052 11.4839 0.459473 12.2431 0.459473C13.0024 0.459473 13.6155 1.08052 13.6155 1.84958C13.6157 2.03219 13.5804 2.21306 13.5115 2.38182C13.4426 2.55057 13.3415 2.70391 13.214 2.83304C13.0866 2.96217 12.9352 3.06455 12.7686 3.13433C12.602 3.20411 12.4234 3.23991 12.2431 3.23968Z" fill="#008BAD" />
+                      </svg>
+                    </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+    </nav>
+    <!--    navbar part hmtl end-->
+
+    <!--    banner part hmtl start-->
+    <section id="banner" class="position-relative">
+      <div class="bottom__shape position-absolute">
+        <img src="./images/banner-bottom.png" alt="banner-bottom.png" class="img-fluid w-100" />
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <div class="banner__text pt-5 pt-lg-0 text-center text-lg-start">
+              <h2 class="text-uppercase fw-normal">Looking to grow your ECE service?</h2>
+              <p class="fw-semiBold pe-lg-5">Our qualified consultants bridge the gap between business and education, bringing you an in-depth 360° service.</p>
+              <button class="btn fw-bold me-md-4 fs-6">Meet the team</button>
+              <button class="btn fw-bold ms-1 fs-6">Contact Us</button>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <div class="banner__img">
+              <img src="./images/banner-img.png" alt="banner-img" class="img-fluid w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--    banner part hmtl end-->
+
+    <!--    ECE Service part hmtl start-->
+    <section id="ece__service">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-3 col-md-4">
+            <div class="ece__service-title position-relative">
+              <h3 class="fw-normal pt-4">How we mentor you to create a better ECE Service.</h3>
+              <img src="./images/bottom-border.svg" alt="bottom-border.svg" class="img-fluid position-absolute" />
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8">
+            <div class="row m-auto justify-content-between">
+              <div class="col-lg-5 col-md-6">
+                <div class="ece__service-text">
+                  <div class="ece-service-icon mb-2">
+                    <img src="./images/Engage.svg" alt="Engage" class="img-fluid" />
+                  </div>
+                  <h3 class="fw-normal">Engage with you</h3>
+                  <p class="fw-normal fs-6">We enable your vision through seeking and implementing creative solutions when developing and maintaining the management of your business.</p>
+                </div>
+                <div class="ece__service-text">
+                  <div class="ece-service-icon mb-2">
+                    <img src="./images/Empower.svg" alt="Empower" class="img-fluid" />
+                  </div>
+                  <h3 class="fw-normal">Empower your Growth</h3>
+                  <p class="fw-normal fs-6">We empower your business growth by mentoring and supporting you to overcome personal and business limitations.</p>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="ece__service-text">
+                  <div class="ece-service-icon mb-2">
+                    <img src="./images/Enable.svg" alt="Enable" class="img-fluid" />
+                  </div>
+                  <h3 class="fw-normal">Enable your Vision</h3>
+                  <p class="fw-normal fs-6">We enable your vision through seeking and implementing creative solutions when developing and maintaining the management of your business.</p>
+                </div>
+                <div class="ece__service-text">
+                  <div class="ece-service-icon mb-2">
+                    <img src="./images/Evolve.svg" alt="Evolve" class="img-fluid" />
+                  </div>
+                  <h3 class="fw-normal">Evolve with Education</h3>
+                  <p class="fw-normal fs-6">We evolve with 21st century education, for education through inclusive practices, collaborative learning approaches and a culture of community.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--    ECE Service part hmtl end-->
+
+    <!--    Our Services part hmtl start-->
+    <section id="our__service">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="our__service-title text-center">
+              <h5 class="fw-bold fs-6 text-uppercase">Our Services</h5>
+              <h3 class="fw-normal">Our offerings in a nutshell.</h3>
+              <p class="fw-normal fs-6">We are passionate about your business success.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="our__service-consulting text-center position-relative">
+              <div class="our__service-icon">
+                <img src="./images/consulting.svg" alt="consulting.svg" class="img-fluid" />
+              </div>
+              <h4 class="fw-bold text-white">Consulting</h4>
+              <p class="fw-medium fs-6 text-white">4E's has a diverse range of ECE consulting services that your business can tap into for support covering all aspects of management and governance consulting for all round business support.</p>
+              <div class="bottom__arrow position-absolute">
+                <img src="./images/consulting-arrow.svg" alt="consulting-arrow.svg" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="our__service-education text-center position-relative m-auto">
+              <div class="our__service-icon">
+                <img src="./images/Education.svg" alt="Education.svg" class="img-fluid" />
+              </div>
+              <h4 class="fw-bold text-white">Education</h4>
+              <p class="fw-medium fs-6 text-white">4E's offers a wide range of professional learning development options for you as ECE operators and educators - including face-to-face, online learning, teacher registration and management mentoring and leadership education programmes.</p>
+              <div class="bottom__arrow position-absolute">
+                <img src="./images/Education-arrow.svg" alt="Education-arrow.svg" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="our__service-subscriptions text-center position-relative ms-auto">
+              <div class="our__service-icon">
+                <img src="./images/Subscription.svg" alt="Subscription.svg" class="img-fluid" />
+              </div>
+              <h4 class="fw-bold text-white">Subscriptions</h4>
+              <p class="fw-medium fs-6 text-white">Enhance your professional knowledge and support your team through accessible, affordable and convenient membership subscriptions!</p>
+              <div class="bottom__arrow position-absolute">
+                <img src="./images/Subscription-arrow.svg" alt="Subscription-arrow.svg" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--    Our Services part hmtl end-->
+
+    <!--    Learning HUb part hmtl start-->
+    <section id="learning__hub" class="position-relative">
+      <div class="learning__shape-top position-absolute">
+        <img src="./images/Learning-Hub-shape-top.png" alt="Learning-HUb-shape-top.svg" class="img-fluid w-100" />
+      </div>
+      <div class="learning__shape-bottom position-absolute">
+        <img src="./images/Learning-Hub-shape-bottom.png" alt="banner-bottom.png" class="img-fluid w-100" />
+      </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-5 col-md-6">
+            <div class="learning__hub-text pe-lg-4">
+              <h5 class="fw-bold fs-6 text-uppercase text-white">Learning HUb</h5>
+              <h3 class="fw-normal text-white">Guide you to the information you need to make successful business decisions.</h3>
+              <p class="fw-semiBold fs-6 text-white pe-lg-3">We help in bridging the gap between business and education, offering you our in-depth understanding of business concepts, regulatory and legislative requirements, and day-to-day operations.</p>
+              <button class="btn bg-white fw-bold fs-6">Get started</button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="learning__hub-img text-center text-md-start">
+              <img src="./images/learning.png" alt="Learning Hub.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--    who we are part hmtl start-->
+    <section id="who__we-are" class="position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-6">
+            <div class="who__we-are-img">
+              <img src="./images/who-we-are.png" alt="who-we-are.png" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="who__we-are-text pe-lg-5">
+              <h5 class="fw-bold fs-6 text-uppercase">WHO WE ARE</h5>
+              <h3 class="fw-normal">Find out more about us</h3>
+              <p class="fw-semiBold fs-6">4E's was created by a group of Kaiako/ Tumuaki in early childhood education, paired with business management acumen and ECE design experience.</p>
+              <p class="fw-normal fs-6">Our team at 4E's are all passionate about striving for best practice across the ECE sector, helping others to grow their early childhood service and to enable and empower ECE service operators and their teams.</p>
+              <button class="btn fw-bold fs-6 text-white">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--    who we are part hmtl end-->
+
+    <!--   Testimonials part hmtl start-->
+    <section id="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="testimonials__title text-center position-relative">
+              <h5 class="fw-bold fs-6 text-uppercase">Testimonials</h5>
+              <h3 class="fw-normal">Word on the street</h3>
+              <img src="./images/bottom-border.svg" alt="bottom-border.svg" class="img-fluid position-absolute" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 col-md-10 col-12 m-auto">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row m-auto align-items-center justify-content-between">
+                    <div class="col-lg-4">
+                      <div class="brand__img mb-3">
+                        <img src="./images/ChapelDownsLogo.png" alt="ChapelDownsLogo.png" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="testimonials__text">
+                        <p class="fst-italic fw-normal">“As a recipient of your annual support package which provides MoE required legislative updates to our policy, procedures and processes as they are required (and indeed with a wide range of mandatory documentation) I am as the manager of our community based early childhood centre continually impressed with the efficiency and quality of the documentation support you offer. As a manager/teacher who works full time “on the floor” this service offers me a huge time saving solution and one which our administering trust is also confident in pursuing.”</p>
+                        <div class="customer-info">
+                          <h4 class="fw-semiBold">Jill Bathgate</h4>
+                          <p class="fw-medium mb-2">Centre Manager, Chapel Downs ELC</p>
+                          <div class="review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row m-auto align-items-center justify-content-between">
+                    <div class="col-lg-4">
+                      <div class="brand__img mb-3">
+                        <img src="./images/ChapelDownsLogo.png" alt="ChapelDownsLogo.png" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="testimonials__text">
+                        <p class="fst-italic fw-normal">“As a recipient of your annual support package which provides MoE required legislative updates to our policy, procedures and processes as they are required (and indeed with a wide range of mandatory documentation) I am as the manager of our community based early childhood centre continually impressed with the efficiency and quality of the documentation support you offer. As a manager/teacher who works full time “on the floor” this service offers me a huge time saving solution and one which our administering trust is also confident in pursuing.”</p>
+                        <div class="customer-info">
+                          <h4 class="fw-semiBold">Jill Bathgate</h4>
+                          <p class="fw-medium mb-2">Centre Manager, Chapel Downs ELC</p>
+                          <div class="review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row m-auto align-items-center justify-content-between">
+                    <div class="col-lg-4">
+                      <div class="brand__img mb-3">
+                        <img src="./images/ChapelDownsLogo.png" alt="ChapelDownsLogo.png" class="img-fluid" />
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="testimonials__text">
+                        <p class="fst-italic fw-normal">“As a recipient of your annual support package which provides MoE required legislative updates to our policy, procedures and processes as they are required (and indeed with a wide range of mandatory documentation) I am as the manager of our community based early childhood centre continually impressed with the efficiency and quality of the documentation support you offer. As a manager/teacher who works full time “on the floor” this service offers me a huge time saving solution and one which our administering trust is also confident in pursuing.”</p>
+                        <div class="customer-info">
+                          <h4 class="fw-semiBold">Jill Bathgate</h4>
+                          <p class="fw-medium mb-2">Centre Manager, Chapel Downs ELC</p>
+                          <div class="review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <i class="fa fa-angle-right"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--   Testimonials part hmtl end-->
+
+    <!--   Subscribtion part hmtl start-->
+    <section id="subscribtion" class="position-relative">
+      <div class="subscribtion__shape-top position-absolute">
+        <img src="./images/Subscription-shape-top.png" alt="subscribtion-shape-top" class="img-fluid w-100" />
+      </div>
+      <div class="footer__shape-top position-absolute">
+        <img src="./images/footer-shape-top.png" alt="footer-shape-top.png" class="img-fluid w-100" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="subscribe__content text-center position-relative">
+              <h5 class="fw-bold fs-6 text-uppercase text-white">4E’s UPDATES</h5>
+              <h3 class="fw-normal text-white">Subscribe here to stay in the know.</h3>
+              <form>
+                <div class="subscribe__box d-flex w-100 justify-content-center align-items-center">
+                  <div class="name__box me-3">
+                    <input class="form-control border border-white border-2" type="text" placeholder="Name" aria-label="Name input" />
+                  </div>
+                  <div class="email__box mx-3">
+                    <input class="form-control border border-white border-2" type="email" placeholder="Email address" aria-label="Email input" />
+                  </div>
+                  <div class="subscribe__btn ms-3">
+                    <button class="btn p-0 fw-semiBold text-white">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--   Subscribtion part hmtl end-->
+
+    <!--   footer part hmtl start-->
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <div class="footer-logo mb-4 mb-lg-0 text-center text-lg-start fw-bold fs-1 text-white">LOGO</div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-4 pe-0 pe-md-3">
+            <div class="footer-items">
+              <ul>
+                <li class="fw-semiBold text-white mb-1">Call us</li>
+                <li class="fw-semiBold mb-4"><a class="text-white" href="tel:+64 123456789">+64 123456789</a></li>
+                <li class="fw-semiBold text-white">Email us</li>
+                <li class="fw-normal"><a class="text-white" href="mailto:info@4es.nz">info@4es.nz</a></li>
+                <li class="mt-4">
+                  <a class="me-1" href="#"><i class="fa fa-linkedin border-white border rounded-circle"></i></a>
+                  <a class="mx-1" href="#"><i class="fa fa-facebook border-white border rounded-circle"></i></a>
+                  <a class="ms-1" href="#">
+                    <i class="border rounded-circle">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.12599 3.71758C4.02304 3.71758 2.30687 5.45594 2.30687 7.58607C2.30687 9.71621 4.02304 11.4546 6.12599 11.4546C8.22894 11.4546 9.94511 9.71621 9.94511 7.58607C9.94511 5.45594 8.22894 3.71758 6.12599 3.71758ZM6.12599 13.5383C2.87415 13.5383 0.249756 10.88 0.249756 7.58607C0.249756 4.2922 2.87415 1.63388 6.12599 1.63388C9.37783 1.63388 12.0022 4.2922 12.0022 7.58607C12.0022 10.88 9.37783 13.5383 6.12599 13.5383ZM12.2429 2.78021C11.4836 2.78021 10.8705 2.15916 10.8705 1.3901C10.8705 0.621048 11.4836 4.25519e-10 12.2429 4.54278e-10C13.0021 4.83036e-10 13.6152 0.621048 13.6152 1.3901C13.6155 1.57272 13.5801 1.75358 13.5112 1.92234C13.4424 2.0911 13.3413 2.24444 13.2138 2.37357C13.0863 2.50269 12.9349 2.60508 12.7683 2.67486C12.6017 2.74464 12.4232 2.78043 12.2429 2.78021Z" fill="white" />
+                      </svg>
+                    </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="footer-items">
+              <ul>
+                <li class="mb-3"><a class="fw-medium text-white fs-6" href="#">Consulting</a></li>
+                <li class="mb-3"><a class="fw-medium text-white fs-6" href="#">Subscriptions</a></li>
+                <li class="mb-3"><a class="fw-medium text-white fs-6" href="#">Education</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-4">
+            <div class="footer-items">
+              <ul>
+                <li class="mb-3"><a class="fw-medium text-white fs-6" href="#">Blog</a></li>
+                <li class="mb-3"><a class="fw-medium text-white fs-6" href="#">Shop</a></li>
+                <li class="mb-3"><a class="fw-medium text-white fs-6" href="#">About us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg col-md-3 col-12">
+            <div class="footer-subcription-box mt-4 mt-md-0">
+              <form>
+                <input class="form-control border mb-3 bg-transparent text-white border-white" type="text" placeholder="Name" aria-label="Name input" />
+                <input class="form-control border mb-3 bg-transparent text-white border-white" type="email" placeholder="Email address" aria-label="Email input" />
+                <button class="btn w-100 bg-white fw-semiBold">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-content text-center text-lg-start">
+              <small class="fs-6">© 2021 4E’s Limited</small>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-content text-center text-lg-start">
+              <small class="fs-6"><a href="#">Privacy Policy</a> • <a href="#">Terms & Conditions</a></small>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="footer-content text-center text-lg-end">
+              <small class="fs-6">Design and development by Mint Design</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--   footer part hmtl end-->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

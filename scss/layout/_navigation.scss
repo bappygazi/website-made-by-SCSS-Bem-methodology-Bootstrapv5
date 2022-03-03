@@ -1,0 +1,26 @@
+// navbar part css //
+.navbg {
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.048);
+}
+.navbar {
+  z-index: 5;
+  padding: 16px 0;
+  transition: all linear 0.1s;
+  @media (max-width: 767.98px) {
+    padding: 8px 0;
+    &.navbar-light .navbar-brand {
+      width: 150px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    &.navbar-light {
+      .navbar-brand {
+        width: 150px;
+      }
+      .nav-item .nav-link {
+        font-size: 12px !important;
+      }
+    }
+  }
+}

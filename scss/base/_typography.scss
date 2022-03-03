@@ -1,0 +1,302 @@
+// navbar part css //
+.navbar {
+  &.navbar-light {
+    .nav-item {
+      .nav-link {
+        color: #5e5e5e;
+        font-family: "Montserrat", sans-serif;
+        &.contact {
+          color: #ffffff;
+          border-radius: 5px;
+          letter-spacing: 0.05em;
+          background-color: #9bdbf3;
+        }
+        span {
+          top: 0;
+          right: 0;
+          width: 18px;
+          height: 18px;
+          font-size: 14px;
+          line-height: 18px;
+          background: #a7606f;
+        }
+      }
+    }
+  }
+}
+
+// banner part css //
+#banner {
+  .banner__text {
+    h2 {
+      font-size: 65px;
+      color: #008bad;
+      line-height: 63px;
+      margin-bottom: 24px;
+      letter-spacing: 0.02em;
+      font-family: "Bree Serif", serif;
+    }
+    p {
+      color: #5e5e5e;
+      font-size: 25px;
+      line-height: 35px;
+      margin-bottom: 50px;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .banner__text h2 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+}
+// ECE Service part css //
+#ece__service {
+  .ece__service-title {
+    h3 {
+      font-size: 34px;
+      line-height: 40px;
+      color: #5e5e5e;
+      letter-spacing: 0.03em;
+      font-family: "Bree Serif", serif;
+    }
+    img {
+      left: -20px;
+      width: 100%;
+      bottom: -25px;
+    }
+  }
+  .ece__service-text {
+    margin-bottom: 70px;
+    h3 {
+      color: #008bad;
+      font-size: 30px;
+      margin-bottom: 25px;
+      font-family: "Bree Serif", serif;
+    }
+    p {
+      color: #5e5e5e;
+      line-height: 22px;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .ece__service-title {
+      h3 {
+        font-size: 25px;
+      }
+    }
+    .ece__service-text {
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .ece__service-title {
+      h3 {
+        font-size: 24px;
+      }
+    }
+    .ece__service-text {
+      p {
+        line-height: 20px;
+      }
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+// Our Service part css //
+#our__service {
+  .our__service-title {
+    h5 {
+      color: #5e5e5e;
+      margin-bottom: 15px;
+      font-family: "Montserrat", sans-serif;
+    }
+    h3 {
+      color: #5e5e5e;
+      font-size: 35px;
+      margin-bottom: 15px;
+      letter-spacing: 0.03em;
+      font-family: "Bree Serif", serif;
+    }
+    p {
+      color: #5e5e5e;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  .our__service-consulting,
+  .our__service-education,
+  .our__service-subscriptions {
+    h4 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      letter-spacing: 0.02em;
+      font-family: "Montserrat", sans-serif;
+    }
+    p {
+      margin-bottom: 30px;
+      line-height: 22px;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
+// Learning HUb part css //
+#learning__hub {
+  .learning__hub-text {
+    h5 {
+      margin-bottom: 16px;
+      font-family: "Montserrat", sans-serif;
+    }
+    h3 {
+      font-size: 35px;
+      line-height: 42px;
+      margin-bottom: 25px;
+      letter-spacing: 0.03em;
+      font-family: "Bree Serif", serif;
+    }
+    p {
+      line-height: 25px;
+      margin-bottom: 30px;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .learning__hub-text {
+      h3 {
+        font-size: 23px;
+        line-height: 35px;
+      }
+      p {
+        font-size: 12px !important;
+      }
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .learning__hub-text h3 {
+      font-size: 25px;
+    }
+  }
+}
+// who we are part css //
+#who__we-are {
+  .who__we-are-text {
+    h5 {
+      color: #5e5e5e;
+      margin-bottom: 16px;
+      font-family: "Montserrat", sans-serif;
+    }
+    h3 {
+      color: #5e5e5e;
+      font-size: 35px;
+      line-height: 42px;
+      margin-bottom: 25px;
+      letter-spacing: 0.03em;
+      font-family: "Bree Serif", serif;
+    }
+    p {
+      color: #5e5e5e;
+      line-height: 23px;
+      margin-bottom: 30px;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .who__we-are-text h3 {
+      font-size: 30px;
+    }
+  }
+}
+// Testimonials part css //
+#testimonials {
+  .testimonials__title {
+    h5 {
+      color: #5e5e5e;
+      margin-bottom: 20px;
+      font-family: "Montserrat", sans-serif;
+    }
+    h3 {
+      font-size: 35px;
+      line-height: 40px;
+      color: #5e5e5e;
+      letter-spacing: 0.03em;
+      font-family: "Bree Serif", serif;
+    }
+    img {
+      left: 48.5%;
+      bottom: -25px;
+      transform: translateX(-50%);
+    }
+  }
+  .testimonials__text {
+    p {
+      color: #5e5e5e;
+      font-size: 18px;
+      margin-bottom: 30px;
+      font-family: "Montserrat", sans-serif;
+    }
+    .customer-info {
+      font-family: "Montserrat", sans-serif;
+      h4 {
+        color: #5e5e5e;
+        font-size: 18px;
+      }
+      p {
+        color: #5e5e5e;
+        font-size: 16px;
+      }
+      .review {
+        i {
+          color: #4a7473;
+        }
+      }
+    }
+  }
+}
+// Subscribtion part css //
+#subscribtion {
+  .subscribe__content {
+    h5 {
+      margin-bottom: 20px;
+      font-family: "Montserrat", sans-serif;
+    }
+    h3 {
+      font-size: 35px;
+      margin-bottom: 60px;
+      letter-spacing: 0.03em;
+      font-family: "Bree Serif", serif;
+    }
+    .subscribe__box {
+      input {
+        height: 45px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: transparent;
+        font-family: "Montserrat", sans-serif;
+        &::placeholder {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .subscribe__content {
+      .subscribe__box {
+        .subscribe__btn {
+          .btn {
+            width: 125px;
+          }
+        }
+      }
+    }
+  }
+}

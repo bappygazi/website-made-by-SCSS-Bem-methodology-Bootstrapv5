@@ -1,0 +1,55 @@
+// footer part css //
+#footer {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  background-color: #008bad;
+  .footer-items {
+    font-family: "Montserrat", sans-serif;
+    ul {
+      li {
+        i {
+          width: 30px;
+          height: 30px;
+          font-size: 15px;
+          color: #ffffff;
+          line-height: 30px;
+          text-align: center;
+          display: inline-block;
+          svg {
+            vertical-align: unset;
+          }
+        }
+        @media (max-width: 767.98px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .footer-subcription-box {
+    input {
+      height: 35px;
+      font-size: 16px;
+      color: #ffffff;
+      &::placeholder {
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+    .btn {
+      height: 45px;
+      font-size: 18px;
+      color: #008bad !important;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+  .footer-content {
+    padding-top: 35px;
+    small {
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}

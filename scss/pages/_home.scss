@@ -1,0 +1,184 @@
+// banner part css //
+#banner {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/banner.png);
+  .bottom__shape {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+// ECE Service part css //
+#ece__service {
+  padding-top: 130px;
+  padding-bottom: 100px;
+  @media (max-width: 767.98px) {
+    .ece__service-title {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+// Our Service part css //
+#our__service {
+  padding: 70px 0;
+  .our__service-title {
+    margin-bottom: 80px;
+  }
+  .our__service-consulting {
+    background-color: #1d748a;
+  }
+  .our__service-education {
+    background-color: #4a7473;
+  }
+  .our__service-subscriptions {
+    background-color: #a7606f;
+  }
+  .our__service-consulting,
+  .our__service-education,
+  .our__service-subscriptions {
+    height: 100%;
+    padding: 40px;
+    border-radius: 12px;
+
+    .our__service-icon {
+      margin-bottom: 50px;
+    }
+    .bottom__arrow {
+      left: 50%;
+      bottom: 25px;
+      transform: translateX(-50%);
+    }
+    @media (min-width: 1400px) and (max-width: 1920px) {
+      width: 380px;
+    }
+  }
+}
+// Learning HUb part css //
+#learning__hub {
+  padding: 250px 0;
+  background-color: #008bad;
+  .learning__shape-top {
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .learning__shape-bottom {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .learning__hub-img {
+    padding-top: 80px;
+  }
+}
+
+// who we are part css //
+#who__we-are {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+// Testimonials part css //
+#testimonials {
+  padding: 100px 0;
+  .carousel-inner {
+    margin-top: 65px;
+    border-radius: 5px;
+    padding: 40px 50px;
+    background: #f7f7f7;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    bottom: auto;
+    opacity: 1;
+    i {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      font-size: 40px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      background-color: #4a7473;
+    }
+  }
+  .carousel-control-next {
+    top: 50%;
+    right: -200px;
+    transform: translateY(-50%);
+  }
+  .carousel-control-prev {
+    top: 50%;
+    left: -200px;
+    transform: translateY(-50%);
+  }
+  @media (max-width: 767.98px) {
+    .carousel-control-next {
+      right: -10px;
+    }
+    .carousel-control-prev {
+      left: -10px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel-control-next {
+      right: -100px;
+    }
+    .carousel-control-prev {
+      left: -100px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .carousel-inner .carousel-item .testimonials__text p {
+      font-size: 16px;
+    }
+    .carousel-control-next {
+      right: -140px;
+    }
+    .carousel-control-prev {
+      left: -140px;
+    }
+  }
+}
+// Subscribtion part css //
+#subscribtion {
+  padding-top: 450px;
+  padding-bottom: 290px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/Subscription.png);
+  .subscribtion__shape-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .footer__shape-top {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .subscribe__content {
+    .subscribe__box {
+      .name__box {
+        width: 370px;
+      }
+      .email__box {
+        width: 470px;
+      }
+    }
+  }
+  @media (max-width: 767.98px) {
+    .subscribtion__shape-top {
+      top: -2px !important;
+    }
+    .footer__shape-top {
+      bottom: -2px !important;
+    }
+  }
+}
